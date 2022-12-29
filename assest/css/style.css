@@ -1,0 +1,45 @@
+.squar{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    /* display: none; */
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.form-hide{
+    display: none;
+}
+
+
+.password-wrapper{
+    position: relative;
+}
+
+.show-eye{
+    position: absolute;
+    right: 5px;
+    bottom: 7px;
+    color: #000;
+    }
+
+    .show-pass{
+        cursor: pointer;
+    }
+
+    .hide-pass{
+        display: none;
+    }
+
+    #formAlert{
+        display: none;
+    }
+    
+    .iti__flag {background-image: url("/assest/img/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("/assest/img/flags@2x.png");}
+}

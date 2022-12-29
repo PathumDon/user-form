@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="assest/css/intlTelInput.css">
+    <link rel="stylesheet" href="assest/css/style.css">
+</head>
+<body>
+
+    <div style="display: none;">
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nemo inventore vero eaque, laboriosam dolore qui perferendis optio unde modi, molestiae minus vel mollitia quas quod aliquam iste, eveniet doloremque.</p>
+        
+        <button id="btn">Click Me</button>
+    </div>
+
+    <div class="squar" style="display: none;">
+        
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <form action="submit" class="form">
+                    <h2 class="form-title">Sign In</h2>
+                    <div class="alert alert-danger" id="formAlert" role="alert">
+                        
+                      </div>
+                    <div class="form-log-in">
+                        <input class="form-control my-4 py-2" id="email" type="text" placeholder="email">
+                        <div class="password-wrapper">
+                            <input class="form-control my-4 py-2 pass-show" id="password" type="password" placeholder="password">
+                            <span class="show-eye"><i class="show-pass fa-solid fa-eye"></i><i class="hide-pass fa-solid fa-eye-slash"></i></span>
+                        </div>
+
+                        <input class="form-control my-2 py-2" id="btnSignIn" type="button" value="Log In">
+                        <input class="form-control my-2 py-2" id="btnSignUp" type="button" value="Sign Up">
+                    </div>
+
+                    <div class="form-sign-up-page1 form-hide">
+                        <input class="form-control my-4 py-2" id="name" type="text" placeholder="name">
+                        <input class="form-control my-4 py-2" id="email1" type="text" placeholder="email">
+                        <input class="form-control my-4 py-2" id="password1" type="password" placeholder="password">
+                        <input class="form-control my-4 py-2" id="password2" type="password" placeholder="password">
+
+                        <input class="form-control my-4 py-2" id="btnNext0" type="button" value="Next">
+                    </div>
+
+                    <div class="form-sign-up-page2 form-hide">
+                        <label for="country">Choose Your Country</label>
+                        <select class="form-control my-4 py-2" id="country" name="country">
+                            <option value="">Select Country</option>
+                            <option value="LK">Sri Lanka</option>
+                            <option value="IN">India</option>
+                            <option value="UAE">UAE</option>
+                        </select>
+                        <label for="city">Choose Your City</label>
+                        <select class="form-control my-4 py-2" id="city" name="city">
+
+                        </select>
+                        <label for="area">Choose Your Area</label>
+                        <select class="form-control my-4 py-2" id="area" name="area">
+
+                        </select>
+                        <label for="address">Address</label>
+                        <input class="form-control my-4 py-2" id="address" type="text" placeholder="address">
+
+                        <input class="form-control my-4 py-2" id="btnNext1" type="button" value="Next">
+                    </div>
+
+                    <div class="form-sign-up-page3 form-hide">
+                        <input class="form-control my-4 py-2" id="phone" type="tel" >
+                        <input class="form-control my-4 py-2" id="verificationCode" type="text" placeholder="Verification Code">
+                        <input class="form-control my-4 py-2" id="btnNext2" type="Submit" value="Sign Up">
+                    </div>
+
+
+
+        
+                </form>
+            </div>
+            </div>
+        </div>
+        
+        <script src="assest/js/intlTelInput.js"></script>
+        <script>
+          var input = document.querySelector("#phone");
+          window.intlTelInput(input, {
+            // any initialisation options go here
+          });
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <script src="assest/js/script.js"></script>
+</body>
+</html>
